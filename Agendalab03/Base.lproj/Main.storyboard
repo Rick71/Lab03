@@ -201,10 +201,10 @@
             </objects>
             <point key="canvasLocation" x="1020" y="320"/>
         </scene>
-        <!--View Controller-->
+        <!--Detalle-->
         <scene sceneID="bUP-NB-1gX">
             <objects>
-                <viewController id="QUW-ZB-Pxo" sceneMemberID="viewController">
+                <viewController id="QUW-ZB-Pxo" customClass="Detalle" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="hIh-Z6-Qek"/>
                         <viewControllerLayoutGuide type="bottom" id="ywl-VT-EWX"/>
@@ -277,6 +277,54 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eer-of-Ecz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1365" y="317"/>
+        </scene>
+        <!--Ver Mas-->
+        <scene sceneID="bCV-7F-U7Q">
+            <objects>
+                <viewController id="KOH-Nr-pwg" customClass="VerMas" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="W79-bJ-eRf"/>
+                        <viewControllerLayoutGuide type="bottom" id="EKU-Fn-rYQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5TN-j3-SsF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cSq-8Z-FXE">
+                                <rect key="frame" x="68" y="321" width="185" height="136"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YN5-WS-lDg">
+                                <rect key="frame" x="40" y="38" width="90" height="30"/>
+                                <color key="backgroundColor" red="0.37140243309999998" green="0.68169084639999999" blue="0.91272095959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Regresar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-X5-wzX">
+                                <rect key="frame" x="133" y="480" width="62" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <webView contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MHa-ge-R3t">
+                                <rect key="frame" x="6" y="107" width="308" height="154"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </webView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estado" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6ce-Mt-WFk">
+                                <rect key="frame" x="137" y="514" width="54" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aWK-up-gdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1742" y="317"/>
         </scene>
     </scenes>
 </document>

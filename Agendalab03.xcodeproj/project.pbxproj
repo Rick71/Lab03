@@ -16,6 +16,8 @@
 		1DACB9601A81ECBC00189A7F /* Agendalab03Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB95F1A81ECBC00189A7F /* Agendalab03Tests.m */; };
 		1DACB96B1A81F7B400189A7F /* Nuevo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB96A1A81F7B400189A7F /* Nuevo.m */; };
 		1DACB96E1A81FB2F00189A7F /* Listado.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB96D1A81FB2F00189A7F /* Listado.m */; };
+		1DACB9711A81FEED00189A7F /* Detalle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9701A81FEED00189A7F /* Detalle.m */; };
+		1DACB9741A8201B600189A7F /* VerMas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9731A8201B600189A7F /* VerMas.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		1DACB96A1A81F7B400189A7F /* Nuevo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nuevo.m; sourceTree = "<group>"; };
 		1DACB96C1A81FB2F00189A7F /* Listado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Listado.h; sourceTree = "<group>"; };
 		1DACB96D1A81FB2F00189A7F /* Listado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Listado.m; sourceTree = "<group>"; };
+		1DACB96F1A81FEED00189A7F /* Detalle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Detalle.h; sourceTree = "<group>"; };
+		1DACB9701A81FEED00189A7F /* Detalle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detalle.m; sourceTree = "<group>"; };
+		1DACB9721A8201B600189A7F /* VerMas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerMas.h; sourceTree = "<group>"; };
+		1DACB9731A8201B600189A7F /* VerMas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerMas.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,10 @@
 				1DACB96A1A81F7B400189A7F /* Nuevo.m */,
 				1DACB96C1A81FB2F00189A7F /* Listado.h */,
 				1DACB96D1A81FB2F00189A7F /* Listado.m */,
+				1DACB96F1A81FEED00189A7F /* Detalle.h */,
+				1DACB9701A81FEED00189A7F /* Detalle.m */,
+				1DACB9721A8201B600189A7F /* VerMas.h */,
+				1DACB9731A8201B600189A7F /* VerMas.m */,
 			);
 			path = Agendalab03;
 			sourceTree = "<group>";
@@ -232,8 +242,10 @@
 				1DACB96B1A81F7B400189A7F /* Nuevo.m in Sources */,
 				1DACB94C1A81ECBC00189A7F /* Home.m in Sources */,
 				1DACB9491A81ECBC00189A7F /* AppDelegate.m in Sources */,
+				1DACB9741A8201B600189A7F /* VerMas.m in Sources */,
 				1DACB96E1A81FB2F00189A7F /* Listado.m in Sources */,
 				1DACB9461A81ECBC00189A7F /* main.m in Sources */,
+				1DACB9711A81FEED00189A7F /* Detalle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
