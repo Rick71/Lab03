@@ -24,4 +24,15 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)accionNuevo:(id)sender {
+}
+
+- (IBAction)accionEditar:(id)sender {
+}
+
+- (IBAction)accionBorrar:(id)sender {
+}
+
+- (IBAction)accionLista:(id)sender {
+}
 @end

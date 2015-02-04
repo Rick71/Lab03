@@ -10,4 +10,11 @@
 
 @interface Detalle : UIViewController
 
+//Table View
+@property (strong, nonatomic) IBOutlet UITableView *tableDatos;
+
+//Acciones
+@property (strong, nonatomic) IBOutlet UIButton *accionRegresar;
+
+
 @end

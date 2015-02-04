@@ -34,4 +34,12 @@
 }
 */
 
+- (IBAction)accionRegresar:(id)sender {
+}
+
+- (IBAction)accionEditar:(id)sender {
+}
+
+- (IBAction)accionEliminar:(id)sender {
+}
 @end

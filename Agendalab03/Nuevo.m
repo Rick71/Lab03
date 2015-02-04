@@ -34,4 +34,12 @@
 }
 */
 
+- (IBAction)accionGuardar:(id)sender {
+}
+
+- (IBAction)accionRegresar:(id)sender {
+}
+
+- (IBAction)accionFoto:(id)sender {
+}
 @end
