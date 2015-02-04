@@ -8,8 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface Nuevo : UIViewController
 
+//Para poder trabajar con la camara
+@interface Nuevo : UIViewController<UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextViewDelegate>
 //Fields
 
 @property (strong, nonatomic) IBOutlet UITextField *imputNombre;

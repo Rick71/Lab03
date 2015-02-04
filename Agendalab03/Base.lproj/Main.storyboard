@@ -118,7 +118,7 @@
                                     <action selector="accionGuardar:" destination="eMI-Ht-rQi" eventType="touchUpInside" id="50H-fh-nCE"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G4L-8A-tbt">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="1423062184_camera-128.png" translatesAutoresizingMaskIntoConstraints="NO" id="G4L-8A-tbt">
                                 <rect key="frame" x="35" y="93" width="251" height="178"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZbG-Zu-FCb">
@@ -137,6 +137,9 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="accionFoto:" destination="eMI-Ht-rQi" eventType="touchUpInside" id="baF-bQ-7Zi"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -395,9 +398,12 @@
             <point key="canvasLocation" x="-150" y="-519"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="1423062184_camera-128.png" width="128" height="128"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="rNf-xR-0ra"/>
-        <segue reference="6G4-in-Ovm"/>
+        <segue reference="laK-Y4-Rpo"/>
         <segue reference="pjj-UK-pc9"/>
     </inferredMetricsTieBreakers>
 </document>

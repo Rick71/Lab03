@@ -18,6 +18,7 @@
 		1DACB96E1A81FB2F00189A7F /* Listado.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB96D1A81FB2F00189A7F /* Listado.m */; };
 		1DACB9711A81FEED00189A7F /* Detalle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9701A81FEED00189A7F /* Detalle.m */; };
 		1DACB9741A8201B600189A7F /* VerMas.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9731A8201B600189A7F /* VerMas.m */; };
+		1DACB9771A82183E00189A7F /* 1423062184_camera-128.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DACB9761A82183E00189A7F /* 1423062184_camera-128.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		1DACB9701A81FEED00189A7F /* Detalle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Detalle.m; sourceTree = "<group>"; };
 		1DACB9721A8201B600189A7F /* VerMas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerMas.h; sourceTree = "<group>"; };
 		1DACB9731A8201B600189A7F /* VerMas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerMas.m; sourceTree = "<group>"; };
+		1DACB9761A82183E00189A7F /* 1423062184_camera-128.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1423062184_camera-128.png"; path = "../../../../../Pictures/1423062184_camera-128.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 		1DACB9421A81ECBB00189A7F /* Agendalab03 */ = {
 			isa = PBXGroup;
 			children = (
+				1DACB9751A82173400189A7F /* Imagenes */,
 				1DACB9471A81ECBC00189A7F /* AppDelegate.h */,
 				1DACB9481A81ECBC00189A7F /* AppDelegate.m */,
 				1DACB94A1A81ECBC00189A7F /* Home.h */,
@@ -137,6 +140,14 @@
 				1DACB95E1A81ECBC00189A7F /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1DACB9751A82173400189A7F /* Imagenes */ = {
+			isa = PBXGroup;
+			children = (
+				1DACB9761A82183E00189A7F /* 1423062184_camera-128.png */,
+			);
+			name = Imagenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -222,6 +233,7 @@
 				1DACB94F1A81ECBC00189A7F /* Main.storyboard in Resources */,
 				1DACB9541A81ECBC00189A7F /* LaunchScreen.xib in Resources */,
 				1DACB9511A81ECBC00189A7F /* Images.xcassets in Resources */,
+				1DACB9771A82183E00189A7F /* 1423062184_camera-128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
