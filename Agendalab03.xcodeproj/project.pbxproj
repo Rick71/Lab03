@@ -14,6 +14,8 @@
 		1DACB9511A81ECBC00189A7F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DACB9501A81ECBC00189A7F /* Images.xcassets */; };
 		1DACB9541A81ECBC00189A7F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DACB9521A81ECBC00189A7F /* LaunchScreen.xib */; };
 		1DACB9601A81ECBC00189A7F /* Agendalab03Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB95F1A81ECBC00189A7F /* Agendalab03Tests.m */; };
+		1DACB96B1A81F7B400189A7F /* Nuevo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB96A1A81F7B400189A7F /* Nuevo.m */; };
+		1DACB96E1A81FB2F00189A7F /* Listado.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB96D1A81FB2F00189A7F /* Listado.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +42,10 @@
 		1DACB9591A81ECBC00189A7F /* Agendalab03Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Agendalab03Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DACB95E1A81ECBC00189A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DACB95F1A81ECBC00189A7F /* Agendalab03Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Agendalab03Tests.m; sourceTree = "<group>"; };
+		1DACB9691A81F7B400189A7F /* Nuevo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nuevo.h; sourceTree = "<group>"; };
+		1DACB96A1A81F7B400189A7F /* Nuevo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nuevo.m; sourceTree = "<group>"; };
+		1DACB96C1A81FB2F00189A7F /* Listado.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Listado.h; sourceTree = "<group>"; };
+		1DACB96D1A81FB2F00189A7F /* Listado.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Listado.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +95,10 @@
 				1DACB9501A81ECBC00189A7F /* Images.xcassets */,
 				1DACB9521A81ECBC00189A7F /* LaunchScreen.xib */,
 				1DACB9431A81ECBC00189A7F /* Supporting Files */,
+				1DACB9691A81F7B400189A7F /* Nuevo.h */,
+				1DACB96A1A81F7B400189A7F /* Nuevo.m */,
+				1DACB96C1A81FB2F00189A7F /* Listado.h */,
+				1DACB96D1A81FB2F00189A7F /* Listado.m */,
 			);
 			path = Agendalab03;
 			sourceTree = "<group>";
@@ -219,8 +229,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DACB96B1A81F7B400189A7F /* Nuevo.m in Sources */,
 				1DACB94C1A81ECBC00189A7F /* Home.m in Sources */,
 				1DACB9491A81ECBC00189A7F /* AppDelegate.m in Sources */,
+				1DACB96E1A81FB2F00189A7F /* Listado.m in Sources */,
 				1DACB9461A81ECBC00189A7F /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
