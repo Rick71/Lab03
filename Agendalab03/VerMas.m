@@ -34,4 +34,6 @@
 }
 */
 
+- (IBAction)accionRegresar:(id)sender {
+    [self performSegueWithIdentifier:@"sagaVerMasDetalle" sender:self];}
 @end

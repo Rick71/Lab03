@@ -9,5 +9,22 @@
 #import <UIKit/UIKit.h>
 
 @interface VerMas : UIViewController
+//Labels
+@property (strong, nonatomic) IBOutlet UILabel *lblNombre;
+@property (strong, nonatomic) IBOutlet UILabel *lblEstado;
+
+//Image View
+@property (strong, nonatomic) IBOutlet UIImageView *Foto;
+
+//Web View
+@property (strong, nonatomic) IBOutlet UIWebView *Video;
+
+//acciones
+- (IBAction)accionRegresar:(id)sender;
+
+
+
+
+
 
 @end

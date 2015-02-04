@@ -35,10 +35,11 @@
 */
 
 - (IBAction)accionRegresar:(id)sender {
+    [self performSegueWithIdentifier:@"sagaListadoHome" sender:self];
 }
 
 - (IBAction)accionEditar:(id)sender {
-}
+    [self performSegueWithIdentifier:@"sagaListadoNuevo" sender:self];}
 
 - (IBAction)accionEliminar:(id)sender {
 }

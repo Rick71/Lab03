@@ -14,7 +14,9 @@
 @property (strong, nonatomic) IBOutlet UITableView *tableDatos;
 
 //Acciones
-@property (strong, nonatomic) IBOutlet UIButton *accionRegresar;
+- (IBAction)accionVerMas:(id)sender;
+- (IBAction)accionCompartir:(id)sender;
+- (IBAction)accionRegresar:(id)sender;
 
 
 @end

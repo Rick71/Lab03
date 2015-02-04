@@ -38,6 +38,7 @@
 }
 
 - (IBAction)accionRegresar:(id)sender {
+    [self performSegueWithIdentifier:@"sagaNuevoHome" sender:self];
 }
 
 - (IBAction)accionFoto:(id)sender {

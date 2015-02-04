@@ -70,10 +70,15 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <segue destination="eMI-Ht-rQi" kind="modal" identifier="sagaHomeNuevo" id="5Zd-pI-Wfa"/>
+                        <segue destination="9nP-y8-Kv3" kind="modal" identifier="sagaHomeListado" id="rTV-Ta-Npd"/>
+                        <segue destination="QUW-ZB-Pxo" kind="modal" identifier="sagaHomeDetalle" id="lOj-NE-qGX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="245" y="315"/>
+            <point key="canvasLocation" x="577" y="59"/>
         </scene>
         <!--Nuevo-->
         <scene sceneID="jUb-gI-I0I">
@@ -132,9 +137,6 @@
                                 <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="accionFoto:" destination="eMI-Ht-rQi" eventType="touchUpInside" id="DGi-DL-30D"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,11 +147,12 @@
                         <outlet property="imputNombre" destination="dWS-Vi-2Iu" id="D2n-OJ-mSH"/>
                         <outlet property="imputYouTube" destination="BxL-81-hFj" id="QqY-kO-RmU"/>
                         <outlet property="inputFoto" destination="G4L-8A-tbt" id="NKG-ib-jYi"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="sagaNuevoHome" id="laK-Y4-Rpo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqT-hD-GxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="660" y="324"/>
+            <point key="canvasLocation" x="608" y="-896"/>
         </scene>
         <!--Listado-->
         <scene sceneID="tYf-lF-2Ho">
@@ -171,7 +174,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="accionRegresar:" destination="9nP-y8-Kv3" eventType="touchUpInside" id="lhd-ty-L8H"/>
+                                    <action selector="accionRegresar:" destination="9nP-y8-Kv3" eventType="touchUpInside" id="G6E-gs-ePh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMt-Ag-f9M">
@@ -183,7 +186,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="accionEditar:" destination="9nP-y8-Kv3" eventType="touchUpInside" id="aC5-fc-AHC"/>
+                                    <action selector="accionEditar:" destination="9nP-y8-Kv3" eventType="touchUpInside" id="7H8-FA-bij"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C61-Vd-rhR">
@@ -195,7 +198,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="accionEliminar:" destination="9nP-y8-Kv3" eventType="touchUpInside" id="uep-e6-Auv"/>
+                                    <action selector="accionEliminar:" destination="9nP-y8-Kv3" eventType="touchUpInside" id="1zL-ZU-O7p"/>
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="4X9-0N-QJS">
@@ -233,12 +236,14 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="tableDatos" destination="4X9-0N-QJS" id="X6a-XB-Fem"/>
+                        <outlet property="tableDatos" destination="4X9-0N-QJS" id="pn2-rg-2jc"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="sagaListadoHome" id="AOL-4x-pha"/>
+                        <segue destination="eMI-Ht-rQi" kind="modal" identifier="sagaListadoNuevo" id="rNf-xR-0ra"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GlG-A7-0w4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1020" y="320"/>
+            <point key="canvasLocation" x="-128" y="340"/>
         </scene>
         <!--Detalle-->
         <scene sceneID="bUP-NB-1gX">
@@ -259,6 +264,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="accionRegresar:" destination="QUW-ZB-Pxo" eventType="touchUpInside" id="ncn-NV-gs5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xkJ-27-vQB">
                                 <rect key="frame" x="4" y="78" width="150" height="38"/>
@@ -268,6 +276,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="accionVerMas:" destination="QUW-ZB-Pxo" eventType="touchUpInside" id="IYn-hH-pbJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPF-5W-QIS">
                                 <rect key="frame" x="167" y="78" width="150" height="38"/>
@@ -277,6 +288,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="accionCompartir:" destination="QUW-ZB-Pxo" eventType="touchUpInside" id="Dxo-sU-x5D"/>
+                                </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="yBW-Xm-WSJ">
                                 <rect key="frame" x="0.0" y="124" width="325" height="444"/>
@@ -313,13 +327,14 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
-                        <outlet property="accionRegresar" destination="fuH-iw-9wa" id="Ghe-FD-XiI"/>
-                        <outlet property="tableDatos" destination="yBW-Xm-WSJ" id="u74-b4-RrV"/>
+                        <outlet property="tableDatos" destination="yBW-Xm-WSJ" id="GjS-gt-1pK"/>
+                        <segue destination="vXZ-lx-hvc" kind="modal" identifier="sagaDetalleHome" id="6G4-in-Ovm"/>
+                        <segue destination="KOH-Nr-pwg" kind="modal" identifier="sagaDetalleVerMas" id="eb2-6K-k5n"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eer-of-Ecz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1365" y="317"/>
+            <point key="canvasLocation" x="1153" y="-938"/>
         </scene>
         <!--Ver Mas-->
         <scene sceneID="bCV-7F-U7Q">
@@ -343,6 +358,9 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="accionRegresar:" destination="KOH-Nr-pwg" eventType="touchUpInside" id="QhB-mc-W68"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Udg-X5-wzX">
                                 <rect key="frame" x="133" y="480" width="62" height="21"/>
@@ -364,10 +382,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+                    <connections>
+                        <outlet property="Foto" destination="cSq-8Z-FXE" id="Jbw-JA-PcS"/>
+                        <outlet property="Video" destination="MHa-ge-R3t" id="fgh-rh-I4i"/>
+                        <outlet property="lblEstado" destination="6ce-Mt-WFk" id="iHt-Dw-tpl"/>
+                        <outlet property="lblNombre" destination="Udg-X5-wzX" id="y6b-9v-f6P"/>
+                        <segue destination="QUW-ZB-Pxo" kind="modal" identifier="sagaVerMasDetalle" id="pjj-UK-pc9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aWK-up-gdY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1742" y="317"/>
+            <point key="canvasLocation" x="-150" y="-519"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="rNf-xR-0ra"/>
+        <segue reference="6G4-in-Ovm"/>
+        <segue reference="pjj-UK-pc9"/>
+    </inferredMetricsTieBreakers>
 </document>

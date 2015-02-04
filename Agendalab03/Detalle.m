@@ -34,4 +34,13 @@
 }
 */
 
+- (IBAction)accionVerMas:(id)sender {
+    [self performSegueWithIdentifier:@"sagaDetalleVerMas" sender:self];
+}
+
+- (IBAction)accionCompartir:(id)sender {
+}
+
+- (IBAction)accionRegresar:(id)sender {
+    [self performSegueWithIdentifier:@"sagaDetalleHome" sender:self];}
 @end
