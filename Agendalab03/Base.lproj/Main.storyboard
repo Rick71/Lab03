@@ -78,7 +78,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="577" y="59"/>
+            <point key="canvasLocation" x="1003" y="-41"/>
         </scene>
         <!--Nuevo-->
         <scene sceneID="jUb-gI-I0I">
@@ -320,7 +320,7 @@
                                 <rect key="frame" x="0.0" y="124" width="325" height="444"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="70" id="bkX-8g-KcY">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AgendaList" rowHeight="70" id="bkX-8g-KcY" customClass="AgendaList">
                                         <rect key="frame" x="0.0" y="0.0" width="325" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="bkX-8g-KcY" id="NWw-E0-TKe">
@@ -343,14 +343,30 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="foto" destination="d7u-XI-tlG" id="Qkm-q7-nVa"/>
+                                            <outlet property="labelEstado" destination="T22-iy-TPw" id="Nom-Ec-2vf"/>
+                                            <outlet property="labelNombre" destination="Mrv-a9-yot" id="30L-cE-82i"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QUW-ZB-Pxo" id="kY3-yk-pA6"/>
+                                    <outlet property="delegate" destination="QUW-ZB-Pxo" id="a9f-zR-0Us"/>
+                                </connections>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOZ-af-DYc" userLabel="Titulo">
+                                <rect key="frame" x="155" y="33" width="149" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="labelTitulo" destination="aOZ-af-DYc" id="IB3-og-Wio"/>
                         <outlet property="tableDatos" destination="yBW-Xm-WSJ" id="GjS-gt-1pK"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="sagaDetalleHome" id="6G4-in-Ovm"/>
                         <segue destination="KOH-Nr-pwg" kind="modal" identifier="sagaDetalleVerMas" id="eb2-6K-k5n"/>
@@ -358,7 +374,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="eer-of-Ecz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1153" y="-938"/>
+            <point key="canvasLocation" x="413" y="340"/>
         </scene>
         <!--Ver Mas-->
         <scene sceneID="bCV-7F-U7Q">
@@ -424,7 +440,7 @@
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="6G4-in-Ovm"/>
-        <segue reference="pjj-UK-pc9"/>
-        <segue reference="rNf-xR-0ra"/>
+        <segue reference="lOj-NE-qGX"/>
+        <segue reference="5Zd-pI-Wfa"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBManager.h"
+#import <Accounts/Accounts.h>
+#import <Social/Social.h>
+#import <Twitter/Twitter.h>
 
-@interface Detalle : UIViewController
-
+@interface Detalle : UIViewController<UITableViewDelegate, UITableViewDataSource, UIAlertViewDelegate>
 //Table View
 @property (strong, nonatomic) IBOutlet UITableView *tableDatos;
 
@@ -17,6 +20,8 @@
 - (IBAction)accionVerMas:(id)sender;
 - (IBAction)accionCompartir:(id)sender;
 - (IBAction)accionRegresar:(id)sender;
+//Label
 
+@property (strong, nonatomic) IBOutlet UILabel *labelTitulo;
 
 @end

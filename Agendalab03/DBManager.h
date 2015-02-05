@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <sqlite3.h>
+extern NSString *idTemp;
 
 @interface DBManager : NSObject
 

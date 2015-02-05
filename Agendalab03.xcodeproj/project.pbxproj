@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		1D3E6E311A8334F200B2C6DF /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E6E301A8334F200B2C6DF /* DBManager.m */; };
 		1D3E6E331A83353100B2C6DF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3E6E321A83353100B2C6DF /* libsqlite3.0.dylib */; };
+		1D3E6E361A8340C300B2C6DF /* AgendaList.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E6E351A8340C300B2C6DF /* AgendaList.m */; };
+		1D3E6E381A834CC400B2C6DF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3E6E371A834CC400B2C6DF /* Accounts.framework */; };
+		1D3E6E3A1A834CE100B2C6DF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3E6E391A834CE100B2C6DF /* Social.framework */; };
+		1D3E6E3C1A834CF100B2C6DF /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3E6E3B1A834CF100B2C6DF /* Twitter.framework */; };
 		1DACB9461A81ECBC00189A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9451A81ECBC00189A7F /* main.m */; };
 		1DACB9491A81ECBC00189A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9481A81ECBC00189A7F /* AppDelegate.m */; };
 		1DACB94C1A81ECBC00189A7F /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB94B1A81ECBC00189A7F /* Home.m */; };
@@ -37,6 +41,11 @@
 		1D3E6E2F1A8334F200B2C6DF /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
 		1D3E6E301A8334F200B2C6DF /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
 		1D3E6E321A83353100B2C6DF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		1D3E6E341A8340C300B2C6DF /* AgendaList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AgendaList.h; sourceTree = "<group>"; };
+		1D3E6E351A8340C300B2C6DF /* AgendaList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AgendaList.m; sourceTree = "<group>"; };
+		1D3E6E371A834CC400B2C6DF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		1D3E6E391A834CE100B2C6DF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		1D3E6E3B1A834CF100B2C6DF /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
 		1DACB9401A81ECBB00189A7F /* Agendalab03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agendalab03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DACB9441A81ECBC00189A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DACB9451A81ECBC00189A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +75,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3E6E3C1A834CF100B2C6DF /* Twitter.framework in Frameworks */,
+				1D3E6E3A1A834CE100B2C6DF /* Social.framework in Frameworks */,
+				1D3E6E381A834CC400B2C6DF /* Accounts.framework in Frameworks */,
 				1D3E6E331A83353100B2C6DF /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -83,6 +95,9 @@
 		1DACB9371A81ECBB00189A7F = {
 			isa = PBXGroup;
 			children = (
+				1D3E6E3B1A834CF100B2C6DF /* Twitter.framework */,
+				1D3E6E391A834CE100B2C6DF /* Social.framework */,
+				1D3E6E371A834CC400B2C6DF /* Accounts.framework */,
 				1D3E6E321A83353100B2C6DF /* libsqlite3.0.dylib */,
 				1DACB9421A81ECBB00189A7F /* Agendalab03 */,
 				1DACB95C1A81ECBC00189A7F /* Agendalab03Tests */,
@@ -121,6 +136,8 @@
 				1DACB9731A8201B600189A7F /* VerMas.m */,
 				1D3E6E2F1A8334F200B2C6DF /* DBManager.h */,
 				1D3E6E301A8334F200B2C6DF /* DBManager.m */,
+				1D3E6E341A8340C300B2C6DF /* AgendaList.h */,
+				1D3E6E351A8340C300B2C6DF /* AgendaList.m */,
 			);
 			path = Agendalab03;
 			sourceTree = "<group>";
@@ -263,6 +280,7 @@
 				1DACB96B1A81F7B400189A7F /* Nuevo.m in Sources */,
 				1DACB94C1A81ECBC00189A7F /* Home.m in Sources */,
 				1DACB9491A81ECBC00189A7F /* AppDelegate.m in Sources */,
+				1D3E6E361A8340C300B2C6DF /* AgendaList.m in Sources */,
 				1DACB9741A8201B600189A7F /* VerMas.m in Sources */,
 				1DACB96E1A81FB2F00189A7F /* Listado.m in Sources */,
 				1DACB9461A81ECBC00189A7F /* main.m in Sources */,

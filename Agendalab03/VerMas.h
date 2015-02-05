@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBManager.h"
 
 @interface VerMas : UIViewController
 //Labels
@@ -21,8 +22,6 @@
 
 //acciones
 - (IBAction)accionRegresar:(id)sender;
-
-
 
 
 
