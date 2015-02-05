@@ -11,7 +11,6 @@
 @interface Home : UIViewController
 
 //Acciones
-
 - (IBAction)accionNuevo:(id)sender;
 - (IBAction)accionEditar:(id)sender;
 - (IBAction)accionBorrar:(id)sender;

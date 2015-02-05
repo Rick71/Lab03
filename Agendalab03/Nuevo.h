@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DBManager.h"
 
 
 //Para poder trabajar con la camara

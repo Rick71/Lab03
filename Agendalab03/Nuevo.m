@@ -36,7 +36,23 @@ UIAlertView *alert;
 */
 
 - (IBAction)accionGuardar:(id)sender {
-}
+    NSString *nombre = self.imputNombre.text;
+    NSString *estado = self.imputEstado.text;
+    NSString *youtube = self.imputYouTube.text;
+    NSData *imageData = UIImagePNGRepresentation(self.inputFoto.image);
+    if((nombre.length == 0)||(estado == 0)||(youtube == 0)){
+        alert = [[UIAlertView alloc] initWithTitle:@"Faltan campos!"
+                                           message:@"Oops! Parece que no haz llenado todos los campos!"
+                                          delegate:self
+                                 cancelButtonTitle:@"Ok"
+                                 otherButtonTitles: nil];
+        [alert show];
+    }
+        else{
+            if([[DBManager getSharedInstance]insertaDB:nombre estado:estado youtube:youtube foto:imageData]){
+                [self performSegueWithIdentifier:@"sagaNuevoHome" sender:self];
+            }
+        }}
 
 - (IBAction)accionRegresar:(id)sender {
     [self performSegueWithIdentifier:@"sagaNuevoHome" sender:self];

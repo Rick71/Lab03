@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D3E6E311A8334F200B2C6DF /* DBManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3E6E301A8334F200B2C6DF /* DBManager.m */; };
+		1D3E6E331A83353100B2C6DF /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3E6E321A83353100B2C6DF /* libsqlite3.0.dylib */; };
 		1DACB9461A81ECBC00189A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9451A81ECBC00189A7F /* main.m */; };
 		1DACB9491A81ECBC00189A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9481A81ECBC00189A7F /* AppDelegate.m */; };
 		1DACB94C1A81ECBC00189A7F /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB94B1A81ECBC00189A7F /* Home.m */; };
@@ -32,6 +34,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D3E6E2F1A8334F200B2C6DF /* DBManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DBManager.h; sourceTree = "<group>"; };
+		1D3E6E301A8334F200B2C6DF /* DBManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBManager.m; sourceTree = "<group>"; };
+		1D3E6E321A83353100B2C6DF /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
 		1DACB9401A81ECBB00189A7F /* Agendalab03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agendalab03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DACB9441A81ECBC00189A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DACB9451A81ECBC00189A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -61,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D3E6E331A83353100B2C6DF /* libsqlite3.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,6 +83,7 @@
 		1DACB9371A81ECBB00189A7F = {
 			isa = PBXGroup;
 			children = (
+				1D3E6E321A83353100B2C6DF /* libsqlite3.0.dylib */,
 				1DACB9421A81ECBB00189A7F /* Agendalab03 */,
 				1DACB95C1A81ECBC00189A7F /* Agendalab03Tests */,
 				1DACB9411A81ECBB00189A7F /* Products */,
@@ -112,6 +119,8 @@
 				1DACB9701A81FEED00189A7F /* Detalle.m */,
 				1DACB9721A8201B600189A7F /* VerMas.h */,
 				1DACB9731A8201B600189A7F /* VerMas.m */,
+				1D3E6E2F1A8334F200B2C6DF /* DBManager.h */,
+				1D3E6E301A8334F200B2C6DF /* DBManager.m */,
 			);
 			path = Agendalab03;
 			sourceTree = "<group>";
@@ -258,6 +267,7 @@
 				1DACB96E1A81FB2F00189A7F /* Listado.m in Sources */,
 				1DACB9461A81ECBC00189A7F /* main.m in Sources */,
 				1DACB9711A81FEED00189A7F /* Detalle.m in Sources */,
+				1D3E6E311A8334F200B2C6DF /* DBManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +458,7 @@
 				1DACB9651A81ECBC00189A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1DACB9661A81ECBC00189A7F /* Build configuration list for PBXNativeTarget "Agendalab03Tests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +467,7 @@
 				1DACB9681A81ECBC00189A7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
