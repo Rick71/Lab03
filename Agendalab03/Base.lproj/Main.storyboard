@@ -31,7 +31,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pnR-jZ-XWF">
-                                <rect key="frame" x="172" y="430" width="131" height="30"/>
+                                <rect key="frame" x="172" y="474" width="131" height="30"/>
                                 <color key="backgroundColor" red="0.37140243309999998" green="0.68169084639999999" blue="0.91272095959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Lista">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -42,7 +42,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vJj-Ww-v9C">
-                                <rect key="frame" x="172" y="392" width="131" height="30"/>
+                                <rect key="frame" x="172" y="436" width="131" height="30"/>
                                 <color key="backgroundColor" red="0.37140243309999998" green="0.68169084639999999" blue="0.91272095959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Editar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -53,7 +53,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dCP-AY-tIm">
-                                <rect key="frame" x="17" y="430" width="131" height="30"/>
+                                <rect key="frame" x="17" y="474" width="131" height="30"/>
                                 <color key="backgroundColor" red="0.37140243309999998" green="0.68169084639999999" blue="0.91272095959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Borrar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -70,7 +70,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2hx-yd-JMl">
-                                <rect key="frame" x="17" y="392" width="131" height="30"/>
+                                <rect key="frame" x="17" y="436" width="131" height="30"/>
                                 <color key="backgroundColor" red="0.37140243309999998" green="0.68169084639999999" blue="0.91272095959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Nuevo">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -80,6 +80,9 @@
                                     <action selector="accionNuevo:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DoJ-te-QN0"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blue-apple-26787.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="6HB-Yk-Oit">
+                                <rect key="frame" x="41" y="153" width="238" height="239"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -324,10 +327,10 @@
                                     <outlet property="delegate" destination="9nP-y8-Kv3" id="0P0-MK-oPJ"/>
                                 </connections>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kib-jb-ggs" userLabel="Titulo">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kib-jb-ggs" userLabel="Titulo">
                                 <rect key="frame" x="154" y="32" width="142" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -534,11 +537,12 @@
     </scenes>
     <resources>
         <image name="1423062184_camera-128.png" width="128" height="128"/>
+        <image name="blue-apple-26787.jpg" width="256" height="256"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="rdK-4D-4CB"/>
-        <segue reference="5Zd-pI-Wfa"/>
-        <segue reference="laK-Y4-Rpo"/>
+        <segue reference="AOL-4x-pha"/>
+        <segue reference="rTV-Ta-Npd"/>
         <segue reference="lOj-NE-qGX"/>
+        <segue reference="5Zd-pI-Wfa"/>
     </inferredMetricsTieBreakers>
 </document>

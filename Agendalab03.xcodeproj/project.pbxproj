@@ -13,6 +13,7 @@
 		1D3E6E381A834CC400B2C6DF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3E6E371A834CC400B2C6DF /* Accounts.framework */; };
 		1D3E6E3A1A834CE100B2C6DF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3E6E391A834CE100B2C6DF /* Social.framework */; };
 		1D3E6E3C1A834CF100B2C6DF /* Twitter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D3E6E3B1A834CF100B2C6DF /* Twitter.framework */; };
+		1D48B3B81A8556850061081A /* blue-apple-26787.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1D48B3B71A8556850061081A /* blue-apple-26787.jpg */; };
 		1DACB9461A81ECBC00189A7F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9451A81ECBC00189A7F /* main.m */; };
 		1DACB9491A81ECBC00189A7F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB9481A81ECBC00189A7F /* AppDelegate.m */; };
 		1DACB94C1A81ECBC00189A7F /* Home.m in Sources */ = {isa = PBXBuildFile; fileRef = 1DACB94B1A81ECBC00189A7F /* Home.m */; };
@@ -46,6 +47,7 @@
 		1D3E6E371A834CC400B2C6DF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		1D3E6E391A834CE100B2C6DF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		1D3E6E3B1A834CF100B2C6DF /* Twitter.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Twitter.framework; path = System/Library/Frameworks/Twitter.framework; sourceTree = SDKROOT; };
+		1D48B3B71A8556850061081A /* blue-apple-26787.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "blue-apple-26787.jpg"; path = "../../../../blue-apple-26787.jpg"; sourceTree = "<group>"; };
 		1DACB9401A81ECBB00189A7F /* Agendalab03.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Agendalab03.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DACB9441A81ECBC00189A7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1DACB9451A81ECBC00189A7F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -172,6 +174,7 @@
 			isa = PBXGroup;
 			children = (
 				1DACB9761A82183E00189A7F /* 1423062184_camera-128.png */,
+				1D48B3B71A8556850061081A /* blue-apple-26787.jpg */,
 			);
 			name = Imagenes;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 				1DACB94F1A81ECBC00189A7F /* Main.storyboard in Resources */,
 				1DACB9541A81ECBC00189A7F /* LaunchScreen.xib in Resources */,
 				1DACB9511A81ECBC00189A7F /* Images.xcassets in Resources */,
+				1D48B3B81A8556850061081A /* blue-apple-26787.jpg in Resources */,
 				1DACB9771A82183E00189A7F /* 1423062184_camera-128.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
