@@ -19,6 +19,7 @@
 @property (strong, nonatomic) IBOutlet UITextField *imputEstado;
 @property (strong, nonatomic) IBOutlet UITextField *imputYouTube;
 
+
 //Image View
 @property (strong, nonatomic) IBOutlet UIImageView *inputFoto;
 

@@ -125,7 +125,8 @@ UIAlertView *alert;
     [_imputNombre resignFirstResponder];
     [_imputEstado resignFirstResponder];
     [_imputYouTube resignFirstResponder];
-}
+    [_inputFoto resignFirstResponder];
+    }
 /*
 #pragma mark - Navigation
 

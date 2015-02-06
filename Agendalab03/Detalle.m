@@ -5,12 +5,11 @@
 //  Created by Ricardo Vera on 04/02/15.
 //  Copyright (c) 2015 Comercomp. All rights reserved.
 //
-
 #import "Detalle.h"
 #import "AgendaList.h"
 
 NSMutableArray *datos;
-NSString *idTemp;
+NSString *idTemp =nil;
 int indice = nil;
 
 @interface Detalle ()
@@ -21,8 +20,7 @@ int indice = nil;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    // Do any additional setup after loading the view.
+    // Do any additional setup after loading the
     [self initController];
 }
 
@@ -31,21 +29,19 @@ int indice = nil;
     // Dispose of any resources that can be recreated.
 }
 
+
 - (void)initController{
-        
-        datos = [[DBManager getSharedInstance]listDB:@"select agendaid, nombre, estado, youtube, foto from agenda"];
+    
+    datos = [[DBManager getSharedInstance]listDB:@"select agendaid, nombre, estado, youtube, foto from agenda"];
 }
-
-
 /*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
+ #pragma mark - Navigation
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+ // Get the new view controller using [segue destinationViewController].
+ // Pass the selected object to the new view controller.
+ }
+ */
 
 - (IBAction)accionVerMas:(id)sender {
     if (idTemp != nil){
@@ -78,6 +74,7 @@ int indice = nil;
 
 - (IBAction)accionRegresar:(id)sender {
     [self performSegueWithIdentifier:@"sagaDetalleHome" sender:self];}
+
 
 /**********************************************************************************************
  Table Functions
@@ -124,10 +121,8 @@ int indice = nil;
     indice = indexPath.row;
     idTemp = [dato objectAtIndex:0];
     self.labelTitulo.text = [dato objectAtIndex:1];
-    //self.id.text = [dato objectAtIndex:0];
     
     
-
+    
 }
-
 @end
