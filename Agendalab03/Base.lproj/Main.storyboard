@@ -114,19 +114,19 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dWS-Vi-2Iu">
-                                <rect key="frame" x="35" y="291" width="251" height="30"/>
+                                <rect key="frame" x="35" y="284" width="251" height="30"/>
                                 <color key="backgroundColor" red="0.87722050652917161" green="0.85719567493217541" blue="0.93698705808080807" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ctL-6e-tqT">
-                                <rect key="frame" x="35" y="363" width="251" height="30"/>
+                                <rect key="frame" x="35" y="348" width="251" height="30"/>
                                 <color key="backgroundColor" red="0.87722050650000005" green="0.85719567490000004" blue="0.93698705810000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xip-xh-M0p">
-                                <rect key="frame" x="79" y="494" width="151" height="30"/>
+                                <rect key="frame" x="79" y="477" width="151" height="30"/>
                                 <color key="backgroundColor" red="0.37140243309999998" green="0.68169084639999999" blue="0.91272095959999999" alpha="1" colorSpace="calibratedRGB"/>
                                 <state key="normal" title="Guardar">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -151,25 +151,25 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnT-eE-7Gf">
-                                <rect key="frame" x="44" y="266" width="67" height="21"/>
+                                <rect key="frame" x="44" y="259" width="67" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Estado de Animo:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ffM-lF-xd6">
-                                <rect key="frame" x="44" y="338" width="137" height="21"/>
+                                <rect key="frame" x="44" y="323" width="137" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="YouTube:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Ep-mx-tW5">
-                                <rect key="frame" x="44" y="411" width="71" height="21"/>
+                                <rect key="frame" x="44" y="386" width="71" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BxL-81-hFj">
-                                <rect key="frame" x="35" y="436" width="251" height="30"/>
+                                <rect key="frame" x="35" y="411" width="251" height="30"/>
                                 <color key="backgroundColor" red="0.87722050650000005" green="0.85719567490000004" blue="0.93698705810000005" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -183,16 +183,41 @@
                                     <action selector="accionFoto:" destination="eMI-Ht-rQi" eventType="touchUpInside" id="baF-bQ-7Zi"/>
                                 </connections>
                             </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bE-Ix-C0U" userLabel="RegresarListado">
+                                <rect key="frame" x="30" y="72" width="62" height="30"/>
+                                <state key="normal" title="Regresar">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="accionRegresarListado:" destination="eMI-Ht-rQi" eventType="touchUpInside" id="G2M-ds-Wa4"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OpL-cI-7Ji">
+                                <rect key="frame" x="79" y="518" width="151" height="30"/>
+                                <color key="backgroundColor" red="0.37140243309999998" green="0.68169084639999999" blue="0.91272095959999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Actualizar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="accionActualizar:" destination="eMI-Ht-rQi" eventType="touchUpInside" id="Csg-oD-PAm"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="buttonActualizar" destination="OpL-cI-7Ji" id="uXx-9j-U3Z"/>
+                        <outlet property="buttonGuardar" destination="xip-xh-M0p" id="EZG-Rc-siu"/>
+                        <outlet property="buttonRegresar" destination="ZbG-Zu-FCb" id="DYI-7i-ELt"/>
+                        <outlet property="buttonRegresarListado" destination="6bE-Ix-C0U" id="RT3-VD-YlJ"/>
                         <outlet property="imputEstado" destination="ctL-6e-tqT" id="7WJ-db-mJw"/>
                         <outlet property="imputNombre" destination="dWS-Vi-2Iu" id="D2n-OJ-mSH"/>
                         <outlet property="imputYouTube" destination="BxL-81-hFj" id="QqY-kO-RmU"/>
                         <outlet property="inputFoto" destination="G4L-8A-tbt" id="NKG-ib-jYi"/>
                         <segue destination="vXZ-lx-hvc" kind="modal" identifier="sagaNuevoHome" id="laK-Y4-Rpo"/>
+                        <segue destination="9nP-y8-Kv3" kind="modal" identifier="sagaNuevoListado" id="rdK-4D-4CB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GqT-hD-GxF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -511,8 +536,9 @@
         <image name="1423062184_camera-128.png" width="128" height="128"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="AOL-4x-pha"/>
+        <segue reference="rdK-4D-4CB"/>
+        <segue reference="5Zd-pI-Wfa"/>
+        <segue reference="laK-Y4-Rpo"/>
         <segue reference="lOj-NE-qGX"/>
-        <segue reference="rNf-xR-0ra"/>
     </inferredMetricsTieBreakers>
 </document>

@@ -13,6 +13,7 @@ NSMutableArray *ListadoDatos;
 int ListadoIndice;
 
 
+
 @interface Listado ()
 
 @end
@@ -21,6 +22,7 @@ int ListadoIndice;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    idTemp = nil;
     [self initController];
 
   
@@ -56,6 +58,11 @@ int ListadoIndice;
     [self performSegueWithIdentifier:@"sagaListadoNuevo" sender:self];}
 
 - (IBAction)accionEliminar:(id)sender {
+    NSString *query = [NSString stringWithFormat: @"DELETE FROM agenda WHERE agendaid=%@;", idTemp];
+    if([[DBManager getSharedInstance]saveDB:query]){
+        [self initController];
+        self.tableDatos.reloadData;
+    }
 }
 
 

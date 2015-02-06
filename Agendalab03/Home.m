@@ -7,6 +7,7 @@
 //
 
 #import "Home.h"
+NSString *idTemp;
 
 @interface Home ()
 
@@ -16,6 +17,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    idTemp = nil;
     // Do any additional setup after loading the view, typically from a nib.
 }
 

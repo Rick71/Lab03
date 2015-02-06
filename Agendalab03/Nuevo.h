@@ -27,6 +27,14 @@
 - (IBAction)accionGuardar:(id)sender;
 - (IBAction)accionRegresar:(id)sender;
 - (IBAction)accionFoto:(id)sender;
+- (IBAction)accionRegresarListado:(id)sender;
+- (IBAction)accionActualizar:(id)sender;
+
+//butons
+@property (strong, nonatomic) IBOutlet UIButton *buttonGuardar;
+@property (strong, nonatomic) IBOutlet UIButton *buttonActualizar;
+@property (strong, nonatomic) IBOutlet UIButton *buttonRegresar;
+@property (strong, nonatomic) IBOutlet UIButton *buttonRegresarListado;
 
 
 @end

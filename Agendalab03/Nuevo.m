@@ -20,6 +20,20 @@ UIAlertView *alert;
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    if(idTemp != nil){
+        self.buttonRegresarListado.hidden = NO;
+        self.buttonRegresar.hidden = YES;
+        self.buttonGuardar.hidden = YES;
+        self.buttonActualizar.hidden = NO;
+        
+        NSMutableArray *dato;
+        dato = [[DBManager getSharedInstance]consultaDB:[NSString stringWithFormat: @"select agendaid, nombre, estado, youtube, foto FROM agenda WHERE agendaid=%@;", idTemp]];
+        self.imputNombre.text = [dato objectAtIndex:1];
+        self.imputEstado.text = [dato objectAtIndex:2];
+        self.imputYouTube.text = [dato objectAtIndex:3];
+        self.inputFoto.image = [UIImage imageWithData:[dato objectAtIndex:4]];
+        
+    }
     
     //Slider pantalla
     [[NSNotificationCenter defaultCenter] addObserver:self
@@ -168,6 +182,31 @@ UIAlertView *alert;
                              cancelButtonTitle:@"Cancelar"
                              otherButtonTitles:@"Camara", @"Carrete", nil];
     [alert show];
+}
+
+- (IBAction)accionRegresarListado:(id)sender {
+    [self performSegueWithIdentifier:@"sagaNuevoListado" sender:self];
+}
+
+- (IBAction)accionActualizar:(id)sender {
+    NSString *nombre  = self.imputNombre.text;
+    NSString *estado  = self.imputEstado.text;
+    NSString *youtube = self.imputYouTube.text;
+    NSData *imageData = UIImagePNGRepresentation([self.inputFoto image]);
+    if((nombre.length == 0)||(estado == 0)||(youtube == 0)){
+        alert = [[UIAlertView alloc] initWithTitle:@"Faltan campos!"
+                                           message:@"Oops! Parece que no haz llenado todos los campos!"
+                                          delegate:self
+                                 cancelButtonTitle:@"Ok"
+                                 otherButtonTitles: nil];
+        [alert show];
+    }
+    else{
+        if([[DBManager getSharedInstance]actualizaDB:nombre estado:estado youtube:youtube foto:imageData idagenda:idTemp]){
+            [self performSegueWithIdentifier:@"sagaNuevoHome" sender:self];
+        }
+    }
+    
 }
 
 //indice de boton, cancelar 0 manda llamar la camara 1 manda llamar a la libreiria de fotos y lo muestra pantalla. camara, carrete o cancelar.
